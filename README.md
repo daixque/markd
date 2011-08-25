@@ -14,9 +14,11 @@ You can install markd using RubyGems as below:
 
 
 ## Usage
-If you are going to build html file from markdown.md, you should type next command.
+Build html:
 
     markd -o out_dir markdown.md
+
+where markdown.md is target markdown file and out_dir is directory html/css/js files are generated into.
 
 html and some css/js files will be generated in out_dir folder.
 
