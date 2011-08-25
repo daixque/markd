@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{markd}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["daisuke sugimori"]
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "bin/markd",
     "lib/markd.rb",
+    "markd.gemspec",
     "template/css/markd.css",
     "template/google-code-prettify/lang-apollo.js",
     "template/google-code-prettify/lang-clj.js",
