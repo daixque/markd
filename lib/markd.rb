@@ -10,7 +10,7 @@ require 'nokogiri'
 APP_NAME = 'markd'
 APP_ROOT = File.dirname File.expand_path(__FILE__ + "/..")
 
-RESOURCES = ["css", "google-code-prettify", "js"]
+RESOURCES = ["css", "js"]
 
 class MarkDApp
   def usage
