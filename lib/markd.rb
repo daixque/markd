@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
-require "bundler/setup"
 require 'bluecloth'
 require 'erubis'
 require 'optparse'
