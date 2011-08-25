@@ -1,0 +1,20 @@
+body { font-family: serif; }
+p { margin: 3pt 10pt 3pt 10pt; }
+
+h1, h2, h3, h4, h5, h6 { font-family: sans-serif; }
+h2 {
+  border-bottom: 2px solid #000;
+  counter-increment: chapter;
+  counter-reset: h3c;
+}
+h3  { counter-increment: h3c; }
+h2:before { content: counter(chapter) ". "; }
+h3:before { content: counter(chapter) "." counter(h3c) ". "; }
+
+pre {
+  margin: 10pt;
+  padding: 5pt;
+  border: 1px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+}

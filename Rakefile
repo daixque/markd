@@ -17,10 +17,12 @@ Jeweler::Tasks.new do |gem|
   gem.name = "markd"
   gem.homepage = "http://github.com/daixque/markd"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "daisuke-sugimori@exa-corp.co.jp"
+  gem.summary = %Q{html report builder for markdown}
+  gem.description = %Q{markd is html report builder for markdown. markd makes well-formatted html with CSS and prittfied code by Google Code Prettify.}
+  gem.email = "daixque@gmail.com"
   gem.authors = ["daisuke sugimori"]
+  gem.executables << "markd"
+  gem.bindir = "bin"
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
