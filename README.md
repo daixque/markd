@@ -9,12 +9,15 @@ markd is based on [bluecloth][1] and [google code prittify][2].
 
 ## Installation
 You can install markd using RubyGems as below:
+
     gem install markd
 
 
 ## Usage
 If you are going to build html file from markdown.md, you should type next command.
-    markd -o out_dir markdown.md 
+
+    markd -o out_dir markdown.md
+
 html and some css/js files will be generated in out_dir folder.
 
 
