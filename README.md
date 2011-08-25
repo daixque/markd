@@ -20,9 +20,6 @@ Build html:
 
 where markdown.md is target markdown file and out_dir is directory html/css/js files are generated into.
 
-html and some css/js files will be generated in out_dir folder.
-
-
 
 ## Copyright
 
