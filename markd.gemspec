@@ -5,51 +5,33 @@
 
 Gem::Specification.new do |s|
   s.name = %q{markd}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["daisuke sugimori"]
-  s.date = %q{2011-08-25}
+  s.date = %q{2011-08-26}
   s.description = %q{markd is html report builder for markdown. markd makes well-formatted html with CSS and prittfied code by Google Code Prettify.}
   s.email = %q{daixque@gmail.com}
   s.executables = ["markd", "markd"]
   s.extra_rdoc_files = [
-    "LICENSE.txt",
     "README.md"
   ]
   s.files = [
     ".document",
     "Gemfile",
-    "LICENSE.txt",
     "README.md",
     "Rakefile",
     "VERSION",
     "bin/markd",
     "lib/markd.rb",
     "markd.gemspec",
+    "template/css/markd-print.css",
+    "template/css/markd-screen.css",
     "template/css/markd.css",
-    "template/google-code-prettify/lang-apollo.js",
-    "template/google-code-prettify/lang-clj.js",
-    "template/google-code-prettify/lang-css.js",
-    "template/google-code-prettify/lang-go.js",
-    "template/google-code-prettify/lang-hs.js",
-    "template/google-code-prettify/lang-lisp.js",
-    "template/google-code-prettify/lang-lua.js",
-    "template/google-code-prettify/lang-ml.js",
-    "template/google-code-prettify/lang-n.js",
-    "template/google-code-prettify/lang-proto.js",
-    "template/google-code-prettify/lang-scala.js",
-    "template/google-code-prettify/lang-sql.js",
-    "template/google-code-prettify/lang-tex.js",
-    "template/google-code-prettify/lang-vb.js",
-    "template/google-code-prettify/lang-vhdl.js",
-    "template/google-code-prettify/lang-wiki.js",
-    "template/google-code-prettify/lang-xq.js",
-    "template/google-code-prettify/lang-yaml.js",
-    "template/google-code-prettify/prettify.css",
-    "template/google-code-prettify/prettify.js",
+    "template/css/prettify.css",
     "template/js/jquery.min.js",
     "template/js/markd.js",
+    "template/js/prettify.js",
     "template/template.html.erb",
     "test/helper.rb",
     "test/test_markd.rb"
