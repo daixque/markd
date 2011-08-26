@@ -72,7 +72,7 @@ class MarkD
     # parse
     @md_html = BlueCloth.new(md_src).to_html
     doc = Nokogiri::HTML::Document.parse @md_html
-    @title = doc.css("h1").text
+    @title = doc.css("h1:first").text
     
     # render
     erb_src = File.read "#{APP_ROOT}/template/template.html.erb"

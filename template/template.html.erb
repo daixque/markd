@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <% if @title && @title.length > 0 %>
   <title><%= @title %></title>
+ <% end %>
   <link rel="stylesheet" type="text/css" href="css/markd.css" />
   <link rel="stylesheet" type="text/css" media="print" href="css/markd-print.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/markd-screen.css" />
