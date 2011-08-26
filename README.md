@@ -19,15 +19,20 @@ features:
 ## Installation
 You can install markd using RubyGems as below:
 
-    gem install markd
+    $ gem install markd
 
 
 ## Usage
-Build html:
+Build html from markdown:
 
-    markd -o out_dir markdown.md
+    $ markd -o out_dir markdown.md
 
-where *markdown.md* is target markdown file and *out_dir* is directory html/css/js files are generated into.
+where *markdown.md* is target markdown file and *out_dir* is directory
+that html/css/js files are generated into.
+
+Use -h (or --help) option to show detail.
+
+    $ markd -h
 
 ## Instructions
 See more instructions:
