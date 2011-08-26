@@ -1,18 +1,11 @@
-body {
-  font-family: serif;
-  padding: 0pt 30pt;
-}
+body {  padding: 0pt 30pt; }
 p { margin: 3pt 10pt 3pt 10pt; }
 
 h1, h2, h3, h4, h5, h6 { font-family: sans-serif; }
-h2 {
-  border-bottom: 2px solid #000;
-  counter-increment: chapter;
-  counter-reset: h3c;
-}
-h3  { counter-increment: h3c; counter-reset: h4c; }
-h4  { counter-increment: h4c; counter-reset: h5c; }
-h5  { counter-increment: h5c; }
+h2 { counter-increment: chapter; counter-reset: h3c; border-bottom: 2px solid #000; }
+h3 { counter-increment: h3c; counter-reset: h4c; }
+h4 { counter-increment: h4c; counter-reset: h5c; }
+h5 { counter-increment: h5c; }
 h2:before { content: counter(chapter) ". "; }
 h3:before { content: counter(chapter) "." counter(h3c) ". "; }
 h4:before { content: counter(chapter) "." counter(h3c) "." counter(h4c) " "; }

@@ -1,3 +1,4 @@
+body {  font-family: serif; }
 a { color: #00f; }
 a:link:after, a:visited:after{
 	content :" (" attr(href) ") ";
