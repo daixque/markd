@@ -4,3 +4,5 @@ a:link:after, a:visited:after{
 }
 h1 { margin: 0pt 0pt 150pt 0pt; padding-top: 100pt; }
 h2 { margin-top: 50pt; }
+p, li { font-size: 9pt; }
+pre, code { font-size: 8pt; }

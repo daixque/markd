@@ -10,11 +10,13 @@ h2 {
   counter-increment: chapter;
   counter-reset: h3c;
 }
-h3  { counter-increment: h3c; counter-reset: h4c;}
-h4  { counter-increment: h4c; }
+h3  { counter-increment: h3c; counter-reset: h4c; }
+h4  { counter-increment: h4c; counter-reset: h5c; }
+h5  { counter-increment: h5c; }
 h2:before { content: counter(chapter) ". "; }
 h3:before { content: counter(chapter) "." counter(h3c) ". "; }
 h4:before { content: counter(chapter) "." counter(h3c) "." counter(h4c) " "; }
+h5:before { content: "(" counter(h5c) ") "; }
 
 pre {
   margin: 10pt;
