@@ -36,10 +36,11 @@ See more instructions:
 
 [3]: http://opentechnica.blogspot.com/2011/08/markd.html
 
-## Copyright
+## License
+markd is released under the MIT license.
 
-Copyright (c) 2011 [daisuke sugimori][4] ([@daixque][5]). See LICENSE.txt for
-further details.
+## Copyright
+Copyright (c) 2011 [daisuke sugimori][4] ([@daixque][5]).
 
 [4]: http://blognewart.blogspot.com/
 [5]: http://twitter.com/daixque
