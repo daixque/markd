@@ -1,0 +1,6 @@
+a { color: #00f; }
+a:link:after, a:visited:after{
+	content :" (" attr(href) ") ";
+}
+h1 { margin: 0pt 0pt 150pt 0pt; padding-top: 100pt; }
+h2 { margin-top: 50pt; }
