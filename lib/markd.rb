@@ -63,12 +63,12 @@ USAGE
     force_exit("#{filename} not file or exists") unless File.file? filename
     md_src = File.read filename
     out_dir = @options[:out_dir] || "docs"
-    MarkD.publish(md_src, out_dir)
+    MarkD.new.publish(md_src, out_dir)
   end
 end
 
 class MarkD
-  def self.publish(md_src, out_dir_path)
+  def publish(md_src, out_dir_path)
     # parse
     @md_html = BlueCloth.new(md_src).to_html
     doc = Nokogiri::HTML::Document.parse @md_html
