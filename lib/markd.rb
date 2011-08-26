@@ -86,7 +86,3 @@ class MarkD
     FileUtils.cp_r(dirs, out_dir_path)
   end
 end
-
-if __FILE__ == $0
-  MarkDApp.new.run ARGV
-end
