@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "markd"
   gem.homepage = "http://github.com/daixque/markd"
   gem.license = "MIT"
-  gem.summary = %Q{html report builder for markdown}
-  gem.description = %Q{markd is html report builder for markdown. markd makes well-formatted html with CSS and prittfied code by Google Code Prettify.}
+  gem.summary = %Q{html report builder for markdown, textile and wiki}
+  gem.description = %Q{markd is html report builder for markdown, textile and wiki. markd makes well-formatted html with CSS and prittfied code by Google Code Prettify.}
   gem.email = "daixque@gmail.com"
   gem.authors = ["daisuke sugimori"]
   gem.executables << "markd"
@@ -32,14 +32,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test
