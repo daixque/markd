@@ -54,14 +54,20 @@ USAGE
     puts reason
     exit 0
   end
+
+  def publish(filename, out_filename)
+    force_exit("#{filename} not file or exists") unless File.file? filename
+    out_dir = @options[:out_dir] || "docs"
+    MarkD.new.publish(filename, out_dir, out_filename)
+  end
   
   def run(argv)
     init argv
     
-    filename = argv.first
-    force_exit("#{filename} not file or exists") unless File.file? filename
-    #md_src = File.read filename
-    out_dir = @options[:out_dir] || "docs"
-    MarkD.new.publish(filename, out_dir)
+    argv.each do |filename|
+      # use 'index.html' as output if one input file given
+      out_filename = (argv.size == 1) ? "index.html" : File.basename(filename, ".*") + ".html"
+      publish filename, out_filename
+    end
   end
 end

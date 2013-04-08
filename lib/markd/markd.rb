@@ -18,7 +18,7 @@ class MarkD
     ENGINES[nil].new
   end
   
-  def publish(filename, out_dir_path)
+  def publish(filename, out_dir_path, out_filename)
     ext = File.extname(filename)
     engine = create_engine ext
     src = File.read filename
@@ -36,7 +36,7 @@ class MarkD
     
     # output
     FileUtils.mkdir_p out_dir_path
-    File.open("#{out_dir_path}/index.html", "w") { |f| f.puts html }
+    File.open("#{out_dir_path}/#{out_filename}", "w") { |f| f.puts html }
     dirs = ::RESOURCES.map { |d| "#{APP_ROOT}/template/#{d}"}
     FileUtils.cp_r(dirs, out_dir_path)
   end

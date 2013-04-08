@@ -32,6 +32,11 @@ Build html from markdown:
 where *markdown.md* is target markdown file and *out_dir* is directory
 that html/css/js files are generated into.
 
+    $ markd *.md
+
+Or simply give source markdwon file(s). Multiple files are acceptable.
+Default output directory is "docs".
+
 Use -h (or --help) option to show detail.
 
     $ markd -h
