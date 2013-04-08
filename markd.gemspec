@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "markd"
-  s.version = "0.2.1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["daisuke sugimori"]
-  s.date = "2013-04-01"
+  s.date = "2013-04-08"
   s.description = "markd is html builder for markdown, textile and wiki. markd makes well-formatted html with CSS and prittfied code by Google Code Prettify."
   s.email = "daixque@gmail.com"
   s.executables = ["markd", "markd"]
